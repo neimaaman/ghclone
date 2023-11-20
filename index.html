@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head style="text-align: center;">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="imag-of-a-cat.png" alt="image of a cat" width="500" height="333">
-    <title>sign in to GitHub</title>
-
-</head>
+    <img src="image-of-a-cat.png" style="width: 50px;height: 30px;">
+    <title> Sign in to GitHub </title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    div {
+        width: 300px;
+        margin: auto;
+        background-color:blue; display: block;
+    }
+    navbar{
+        display: block; text-decoration: none;
+    }
+    img{
+         text-align: center;
+    }
+</style>
 <body>
-<div style=" background-color:turquoise;  width: 300px; margin: auto">
- <h1 style="font: size 10px;">Sign in to GitHub</h1>  
- <img src="imag-of-a-cat.png" alt="image of a cat" width="500" height="333">
+ <h4>Sign in to GitHub</h4>  
  <form action="/action_page.php">
-    <label for="username or email address"></label>Username or email address:</label><br>
+ 
+ <div>
+    <label for="username or email address">Username or email address</label><br>
     <input type="text" id="username or email address" name="username or email address"><br>
-    <label for="password">Password</label><br>
-    <input type="'text" id="password"><br><br>
-    <button type="button" onclick="alert('Sign in')"> Sign in <br>
-        
-        <dl>
-        <dt>Terms</dt>
-        <dt>Privacy</dt>
-        <dt>Docs</dt>
-        <dt>Contact GitHub Support</dt>
-        </dl>
-    </div>
-    <span> sign in </span>
-    <button type="button" onclick="alert( 'Sign in with a passkey')"> Sign in with a passkey <br>
-    </div>
+    <label for="pwd">Password</label><br>
+    <input type="'text" id="password">
+    <p> forgot passwor?</p>
+    <a href="sign in"> Sign in </a>
+ </div>
+ <divc class="content">
+    <a href="sign in with passkey"> Sign in with passkey</a> <br>
+    <p>new to GitHub? <a href="create an account">Create an account</a></p>
+ </div>
+ 
+    <nav class="navbar" style="list-style: none;">
+    <ul style="list-style-type: none; text-align: center;">
+        <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Terms</a></li>
+        <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Privacy</a></li>
+        <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Docs</a></li>
+        <li>Contact GitHub Support</li>
+    </ul>
+    </nav>
  </form>
 </body>
 </html>
