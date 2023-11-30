@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <img src="image-of-a-cat.png" style="width: 50px;height: 50px; margin: auto; display: block;">
-        <title> Sign in to GitHub </title>
-    </head>
-    <body>
-        <style>
-            div {
-       
-            width: 300px;
-            margin: auto;
-            display: block;
-            border: 1px slategrey;
-            border-radius: 10px;
-            background-color: aquamarine;
-             }
-            input{
-                border-radius: 3px; width: 200px;height: 18px;
-                border-color: aqua;}
-            
-            p a{text-align: center; text-decoration: none;
-                }
-            
-            footer a{
-            text-align:center; text-decoration: none;}
-            li {
-               display: inline-block; word-spacing: 5px; font: small;
-            }    
-            </style>
-            <header style="text-align: center;">Sign in to GitHub </header><br>
-            <div style="width: 300px; text-align: center; margin: auto;">  
-               
-             
-        <form action="/action_page.php">
-                     
-
-                <label for="uname or email address">Username or email address</label><br>
-                <input type="text" id="uname or email address" name="uname or email address" autofocus><br>
-                <label for="password">Password</label> <a href="forgot password" style="text-decoration: none;"> Forgot Password? </a>
-                <input type="'text" id="password" name="password"> <br> <br>
-                <input type ="submit" value= "Sign in" style="width: 200px;height: 25px; background-color: green;> <br><br>
-                
-            <div style="border:1px solid black;"> <br><br>
-                <a href="http://docs.github.com/.../signing-in-with-a-passkey" style="text-decoration: none;"> Sign in with Passkey</a> <br>
-                <p>New to GitHub? <a href="http://github.com/signup  ">Create an account</a></p>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GitHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     
-        <footer>
-                <ul style="list-style-type: none; text-align: center;">
-                    <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Terms</a></li>
-                    <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Privacy</a></li>
-                    <li><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Docs</a></li>
-                    <li>Contact GitHub Support</li>
+</head>
+<body>
+        <div class="mx-auto w-72">
+            <img class="mx-auto h-20 max-w-20" src="image-of-a-cat.png" alt="image-of-a-cat">
+            
+            <header class="text-center">Sign in to GitHub</header> <br>
+            
+            <form class="bg-slate-100">
+            <label for="usernameoremail">Username or Email Address</label><br>
+            <input class="w-60" type="text" id="usernameoremail" name="usernameoremail" autofocus> <br><br>
+            <div class="flex justify-between">
+                <label for="password"> Password</label>
+                <a href="forgotpassword">Forgot password?</a> <br>
+            </div>
+            <input class="w-60 border-radius-" type="text" id="password" name="Password"><br>
+            <input type="submit" value="Sign in" class="h-20 max-w-20">
+            </form><br><br>
+    
+            </div>
+            <div class="mx-auto text-center bg-yellow-300 h-50 w-72 ">
+            <a href="signinwithpasskey">Sign in with Passkey</a><br>
+            <p> New to GitHub? <a href="Creat an account"> Create an account</a> </p>
+            </div> <br><br>
+            
+            <footer>
+                <ul class="text-center"> 
+                    <li class="inline"><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Terms</a></li>
+                    <li class="inline"><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Privacy</a></li>
+                    <li class="inline"><a href="https://docs.github.com/en/site-policy/github-terms/github-terms-of-service">Docs</a></li>
+                    <li class="inline">Contact GitHub Support</li>
                 </ul>
-        </footer>
-        </form>
-    </body>
+            </footer>
+
+        </div>
+        
+</body>
 </html>
